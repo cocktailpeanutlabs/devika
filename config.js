@@ -1,4 +1,4 @@
 module.exports = {
-  torch: true,
-  xformers: true
+//  torch: true,
+//  xformers: true
 }
