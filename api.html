@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <style>
+    #app {
+      max-width: 800px;
+      padding: 50px 0;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+    #app a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      let items = [{
+        name: "OPENAI API ACCESS KEY PAGE",
+        url: "https://platform.openai.com/api-keys"
+      }, {
+        name: "CLAUDE API ACCESS KEY PAGE",
+        url: "https://console.anthropic.com/settings/keys"
+      }, {
+        name: "GROQ API ACCESS KEY PAGE",
+        url: "https://console.groq.com/keys"
+      }, {
+        name: "GEMINI API ACCESS KEY PAGE",
+        url: "https://aistudio.google.com/app/apikey"
+      }, {
+        name: "GOOGLE_SEARCH API ACCESS KEY PAGES",
+        url: "https://developers.google.com/custom-search/v1/overview"
+      }, {
+        name: "GOOGLE_SEARCH_ENGINE_ID PAGE",
+        url: "https://programmablesearchengine.google.com/controlpanel/all"
+      }]
+      document.querySelector("#app").innerHTML = items.map((item) => {
+        return `<a href="${item.url}" target="_blank">${item.name}</a>`
+      }).join("")
+    })
+  </script>
+</body>
+</html>
