@@ -7,20 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <style>
     #app {
+      font-family: Sans-serif;
       max-width: 800px;
-      padding: 50px 0;
+      padding: 50px;
       box-sizing: border-box;
       margin: 0 auto;
     }
     #app a {
       display: block;
       padding: 10px;
-      text-decoration: none;
+      color: black;
     }
   </style>
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <h1>Get API Keys from these sites</h1>
+    <div class='container'></div>
+  </div>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       let items = [{
@@ -42,7 +46,7 @@
         name: "GOOGLE_SEARCH_ENGINE_ID PAGE",
         url: "https://programmablesearchengine.google.com/controlpanel/all"
       }]
-      document.querySelector("#app").innerHTML = items.map((item) => {
+      document.querySelector("#app .container").innerHTML = items.map((item) => {
         return `<a href="${item.url}" target="_blank">${item.name}</a>`
       }).join("")
     })
