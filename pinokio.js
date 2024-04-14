@@ -29,7 +29,7 @@ module.exports = {
           }, {
             icon: "fa-solid fa-key",
             text: "Get API Keys",
-            href: "api.html"
+            href: "api.html?raw=true"
           }]
         } else {
           return [{
