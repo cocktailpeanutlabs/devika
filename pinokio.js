@@ -27,6 +27,7 @@ module.exports = {
             text: "Terminal",
             href: "start.js",
           }, {
+            icon: "fa-solid fa-key",
             text: "Get API Keys",
             href: "api.html"
           }]
