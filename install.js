@@ -6,7 +6,7 @@ module.exports = async (kernel) => {
       method: "shell.run",
       params: {
         message: [
-          "git clone https://github.com/stitionai/devika app",
+          "git clone https://github.com/peanutcocktail/devika app",
         ]
       }
     }, {
@@ -25,11 +25,6 @@ module.exports = async (kernel) => {
         path: "app/ui",
         message: "npm install"
       }
-//    }, {
-//      method: "fs.share",
-//      params: {
-//        venv: "app/env"
-//      }
     }, {
       method: "notify",
       params: {
