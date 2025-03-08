@@ -6,7 +6,7 @@ module.exports = async (kernel) => {
       method: "shell.run",
       params: {
         message: [
-          "git clone https://github.com/peanutcocktail/devika app",
+          "git clone https://github.com/6Morpheus6/devika app",
         ]
       }
     }, {
@@ -15,7 +15,7 @@ module.exports = async (kernel) => {
         venv: "env",
         path: "app",
         message: [
-          "pip install -r requirements.txt",
+          "uv pip install -r requirements.txt",
           "playwright install --with-deps"
         ],
       }
