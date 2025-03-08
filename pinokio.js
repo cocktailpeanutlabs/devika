@@ -1,6 +1,6 @@
 const path = require('path')
 module.exports = {
-  version: "1.5",
+  version: "3.0",
   title: "devika",
   description: "Agentic AI Software Engineer https://github.com/stitionai/devika",
   icon: "icon.png",
