@@ -3,7 +3,7 @@ module.exports = {
     method: "shell.run",
     params: {
       message: [
-        "git clone https://github.com/peanutcocktail/devika app",
+        "git clone https://github.com/6Morpheus6/devika app",
       ]
     }
   }, {
