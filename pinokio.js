@@ -1,6 +1,6 @@
 const path = require('path')
 module.exports = {
-  version: "1.5",
+  version: "3.0",
   title: "devika",
   description: "Agentic AI Software Engineer https://github.com/stitionai/devika",
   icon: "icon.png",
@@ -60,6 +60,7 @@ module.exports = {
           icon: "fa-regular fa-circle-xmark",
           text: "Reset",
           href: "reset.js",
+          confirm: "Are you sure you wish to reset the app?"
         }]
       }
     } else {
